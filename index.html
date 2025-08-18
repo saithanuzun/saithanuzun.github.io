@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sait Han Uzun — CV</title>
+  <style>
+    /* ------- Reset & base ------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.5; color: #0f172a; background: #f8fafc;
+    }
+
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ------- Layout ------- */
+    .container { max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    .card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden;
+      box-shadow: 0 6px 24px rgba(2,6,23,.06);
+    }
+    header {
+      display: grid; grid-template-columns: 1fr; gap: 12px; padding: 28px 28px 0 28px;
+      background: linear-gradient(180deg, #e2f3ff 0%, #ffffff 40%);
+    }
+    .name { font-size: 2rem; font-weight: 800; letter-spacing: .2px; color: #0b1220; }
+    .role { font-size: 1rem; color: #334155; margin-top: -4px; }
+
+    .contact {
+      display: flex; flex-wrap: wrap; gap: 10px 16px; padding: 0 28px 20px 28px; border-bottom: 1px solid #e2e8f0;
+    }
+    .contact a { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: #f1f5f9; }
+    .contact svg { width: 16px; height: 16px; }
+
+    main { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 24px 28px 32px 28px; }
+
+    /* ------- Sections ------- */
+    section { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 18px; }
+    h2 { font-size: 1.1rem; letter-spacing: .4px; color: #0b1220; margin: 0 0 12px; }
+    p { margin: 0.25rem 0; }
+
+    /* ------- Lists & chips ------- */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .chip { border: 1px solid #e2e8f0; background: #f8fafc; padding: 6px 10px; border-radius: 999px; font-size: .9rem; }
+
+    /* ------- Timeline ------- */
+    .timeline { display: grid; gap: 16px; }
+    .edu-item, .project { display: grid; gap: 4px; }
+    .muted { color: #475569; }
+    .meta { font-size: .95rem; color: #334155; }
+
+    .project ul { margin: 6px 0 0 16px; }
+
+    footer { text-align: center; padding: 18px; color: #64748b; font-size: .9rem; }
+
+    /* ------- Print styles ------- */
+    @media print {
+      body { background: #fff; }
+      .container { margin: 0; max-width: 100%; padding: 0; }
+      .card, section { border: none; box-shadow: none; }
+      header { background: #fff; padding-bottom: 0; }
+      .contact a { background: none; padding: 0; }
+      .contact a svg { display: none; }
+      a { color: #000; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="name">Sait Han Uzun</div>
+        <div class="role">Software Developer — .NET / C# / Blazor</div>
+      </header>
+
+      <div class="contact" aria-label="Contact details">
+        <a href="tel:07862265412" title="Call">
+          <!-- phone icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.09 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.19a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg>
+          07862265412
+        </a>
+        <a href="mailto:saithan.uzun@gmail.com" title="Email">
+          <!-- mail icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+          saithan.uzun@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/saithanuzun/" target="_blank" rel="noreferrer noopener" title="LinkedIn">
+          <!-- linkedin icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.98h5V24H0zM8.98 8.98H14v2.05h.07c.7-1.32 2.42-2.7 4.98-2.7C23.4 8.33 24 12 24 16.77V24h-5v-6.3c0-1.5-.03-3.43-2.09-3.43-2.09 0-2.41 1.63-2.41 3.31V24H8.98z"/></svg>
+          /in/saithanuzun
+        </a>
+        <a href="https://github.com/saithanuzun" target="_blank" rel="noreferrer noopener" title="GitHub">
+          <!-- github icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.41-4.04-1.41-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.73.08-.73 1.19.08 1.82 1.22 1.82 1.22 1.06 1.81 2.79 1.29 3.47.99.11-.77.42-1.3.76-1.6-2.67-.3-5.48-1.33-5.48-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.67 1.65.25 2.87.12 3.17.77.84 1.24 1.9 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.23v3.3c0 .32.21.69.82.58A12 12 0 0 0 12 .5Z"/></svg>
+          github.com/saithanuzun
+        </a>
+      </div>
+
+      <main>
+        <!-- Profile -->
+        <section id="profile">
+          <h2>Profile</h2>
+          <p>I am a software developer interested in .NET and Microsoft technologies. Proficient in C#, used in many projects—Xamarin for mobile development and Unity for game programming. Now I focus on web development, such as SPA frameworks like Blazor for frontend, and backend development with .NET.</p>
+          <p>I keep applications scalable and improvable through design patterns and principles. I have personal projects on GitHub and experience with database design in PostgreSQL and writing SQL queries. I also have an understanding of HTML, CSS, and JavaScript.</p>
+          <p><strong>Currently:</strong> open to opportunities.</p>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="edu-item">
+              <div class="meta"><strong>Computer Science, Artificial Intelligence BSc (Hons)</strong> — De Montfort University</div>
+              <div class="muted">First-class honours · Leicester, United Kingdom</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="chips" aria-label="Skills list">
+            <span class="chip">C#</span>
+            <span class="chip">OOP</span>
+            <span class="chip">LINQ</span>
+            <span class="chip">.NET Core</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Blazor WebAssembly</span>
+            <span class="chip">Entity Framework</span>
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">SOLID Principles</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Xamarin</span>
+            <span class="chip">Unity</span>
+            <span class="chip">HTML/CSS/JS</span>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="timeline">
+            <article class="project">
+              <div class="meta"><strong>Twitter-Clone</strong> — Full-stack social app</div>
+              <p>Built a full Twitter clone using CQRS and Onion Architecture with ASP.NET Core Web API and Blazor WebAssembly. Includes following users, tweeting, liking, and replying. Designed database schema and diagram from scratch.</p>
+              <ul>
+                <li>Frontend: Blazor WebAssembly</li>
+                <li>Backend: ASP.NET Core Web API</li>
+                <li>Architecture: CQRS, Onion</li>
+              </ul>
+              <p><a href="https://github.com/saithanuzun/Twitter-Clone" target="_blank" rel="noreferrer noopener">Repository</a></p>
+            </article>
+
+            <article class="project">
+              <div class="meta"><strong>MVM Cleaning</strong> — Production web app</div>
+              <p>Real-world web application for a cleaning service built with .NET. Features CI/CD, deployed on a DigitalOcean droplet. Users can request quotes, book with availability checks, receive email receipts, and pay via Stripe. Designed with SEO best practices.</p>
+              <ul>
+                <li>Stripe integration · Booking &amp; availability</li>
+                <li>CI/CD pipelines · Deployed on DigitalOcean</li>
+              </ul>
+              <p><a href="https://www.mvmcleaning.com/" target="_blank" rel="noreferrer noopener">Live site</a></p>
+            </article>
+
+            <article class="project">
+              <div class="meta"><strong>Reddit-Clone</strong></div>
+              <p>Social news aggregation and discussion website clone where users share links and text content, comment, and vote. Built by following a senior .NET developer’s YouTube series; used the project to deepen full-stack skills.</p>
+              <p><a href="https://github.com/saithanuzun/Eksi-Sozluk" target="_blank" rel="noreferrer noopener">Repository</a></p>
+            </article>
+
+            <article class="project">
+              <div class="meta"><strong>Vehicle Plate Check</strong> — Xamarin mobile app</div>
+              <p>Check any UK vehicle by entering the registration number.</p>
+              <p><a href="https://github.com/saithanuzun/VehiclePlateCheck" target="_blank" rel="noreferrer noopener">Repository</a></p>
+            </article>
+
+            <article class="project">
+              <div class="meta"><strong>Find My Friends</strong> — Xamarin mobile app</div>
+              <p>Background real-time location tracking of friends with map view.</p>
+              <p><a href="https://github.com/saithanuzun/FindMyFriends" target="_blank" rel="noreferrer noopener">Repository</a></p>
+            </article>
+
+            <article class="project">
+              <div class="meta"><strong>Jetpack</strong> — Unity game</div>
+              <p>A 2D platform mobile game developed with the Unity Engine.</p>
+              <p><a href="https://github.com/saithanuzun/Jetpack" target="_blank" rel="noreferrer noopener">Repository</a></p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Sait Han Uzun — Built with semantic HTML & CSS
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Structured data (optional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sait Han Uzun",
+    "email": "mailto:saithan.uzun@gmail.com",
+    "telephone": "+44 7862 265412",
+    "url": "https://github.com/saithanuzun",
+    "sameAs": [
+      "https://www.linkedin.com/in/saithanuzun/",
+      "https://github.com/saithanuzun"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Software Developer",
+      "skills": "C#, .NET, Blazor, SQL, Entity Framework, Git, SOLID principles, Xamarin, Unity, PostgreSQL, HTML, CSS, JavaScript"
+    }
+  }
+  </script>
+</body>
+</html>
